@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan for Active Directory</title>
+</head>
+<body>
+    <h2>Scan for:</h2>
+    <select name="scan-type">
+        <option value="active-directory">Active Directory</option>
+        </select>
+
+    <div id="active-directory-options">
+        <label for="fully-qualified-domain-name">Fully-qualified domain name:</label>
+        <input type="text" id="fully-qualified-domain-name" name="fully-qualified-domain-name"><br>
+
+        <label for="organizational-unit">Organizational Unit:</label>
+        <input type="text" id="organizational-unit" name="organizational-unit"><br>
+
+        <label for="domain-controller">Domain controller:</label>
+        <input type="text" id="domain-controller" name="domain-controller"><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+    </div>
+
+    <button type="submit">Add to Scan</button>
+    <button type="reset">Exclude from Scan</button>
+</body>
+</html>
