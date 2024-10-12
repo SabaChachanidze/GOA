@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#rgb {
+    background-color: rgb(240, 128, 128);
+    color: rgb(0, 0, 128);
+}
+
+
+#hex {
+    background-color: #90EE90; 
+    color: #8B0000; 
+}
+
+
+#hsl {
+    background-color: hsl(200, 100%, 80%); 
+    color: hsl(120, 100%, 25%); 
+}
+
+
