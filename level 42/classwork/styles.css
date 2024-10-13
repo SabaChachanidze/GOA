@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.example {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    text-align: center;
+    width: 200px;
+}
+
+
+.border-1 {
+    border: 2px solid #444;
+}
+
+.border-2 {
+    border: 2px dashed #888;
+}
+
+.border-3 {
+    border: 4px double #666;
+}
+
+
+.radius-1 {
+    border: 2px solid #444;
+    border-radius: 10px;
+}
+
+.radius-2 {
+    border: 2px solid #888;
+    border-radius: 50%;
+}
+
+.radius-3 {
+    border: 2px solid #666;
+    border-radius: 20px 40px;
+}
+
+
+.bg-1, .bg-2, .bg-3 {
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-1 {
+    background-image: url('https://th.bing.com/th/id/OIP.aZWMw6D96KxJtW9KmK2GBQHaFS?rs=1&pid=ImgDetMain');
+}
+
+.bg-2 {
+    background-image: url('https://th.bing.com/th/id/OIP.aZWMw6D96KxJtW9KmK2GBQHaFS?rs=1&pid=ImgDetMain');
+}
+
+.bg-3 {
+    background-image: url('https://th.bing.com/th/id/OIP.aZWMw6D96KxJtW9KmK2GBQHaFS?rs=1&pid=ImgDetMain');
+}
