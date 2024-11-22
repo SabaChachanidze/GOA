@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.rotate {
+    background-color: #ff6347;
+}
+.scale {
+    background-color: #4682b4;
+}
+.translate {
+    background-color: #32cd32; 
+}
+.skew {
+    background-color: #9370db; 
+}
+
+
+.rotate:hover {
+    transform: rotate(45deg);
+    background-color: #ff4500;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+    background-color: #4169e1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.translate:hover {
+    transform: translate(50px, 50px);
+    background-color: #2e8b57;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skew:hover {
+    transform: skew(20deg, 20deg);
+    background-color: #8a2be2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
