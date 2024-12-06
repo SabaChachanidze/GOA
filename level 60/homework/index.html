@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>red bar animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+        }
+
+        .container {
+            position: relative;
+            width: 80%; 
+            height: 30%; 
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .red-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%; 
+            background-color: red;
+            width: 0%; 
+            animation: extendBar 2s ease-in-out forwards;
+        }
+
+        @keyframes extendBar {
+            0% {
+                width: 0%; 
+            }
+            100% {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red-bar"></div>
+    </div>
+</body>
+</html>

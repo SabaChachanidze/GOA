@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entry animations</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: 100vh;
+            align-items: center;
+            overflow: hidden;
+        }
+        .element {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .from-top {
+            animation-name: fromTop;
+        }
+        .from-bottom {
+            animation-name: fromBottom;
+        }
+        .from-left {
+            animation-name: fromLeft;
+        }
+        .from-right {
+            animation-name: fromRight;
+        }
+
+        @keyframes fromTop {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes fromBottom {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes fromLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes fromRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element from-top"></div>
+        <div class="element from-bottom"></div>
+        <div class="element from-left"></div>
+        <div class="element from-right"></div>
+    </div>
+</body>
+</html>
