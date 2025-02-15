@@ -1,0 +1,12 @@
+<input type="number" id="tempInput" placeholder="Enter temperature (°C)">
+<button onclick="checkTemperature()">Check</button>
+<p id="tempResult"></p>
+
+<script>
+    function checkTemperature() {
+        let temp = document.getElementById("tempInput").value;
+        let message = temp <= 10 ? "Cold" : temp <= 25 ? "Moderate" : "Hot";
+        document.getElementById("tempResult").innerText = "The temperature is " + message;
+        console.log("The temperature is " + message);
+    }
+</script>

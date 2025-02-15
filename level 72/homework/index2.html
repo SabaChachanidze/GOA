@@ -1,0 +1,15 @@
+<input type="number" id="gradeInput" placeholder="Enter score (0-100)">
+<button onclick="checkGrade()">Check</button>
+<p id="gradeResult"></p>
+
+<script>
+    function checkGrade() {
+        let score = document.getElementById("gradeInput").value;
+        let grade = score >= 90 ? "A" :
+                    score >= 80 ? "B" :
+                    score >= 70 ? "C" :
+                    score >= 60 ? "D" : "F";
+        document.getElementById("gradeResult").innerText = "Your grade is " + grade;
+        console.log("Your grade is " + grade);
+    }
+</script>

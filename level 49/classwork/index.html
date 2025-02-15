@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ელემენტების პოზიციონირება</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>ვებდიზაინი: ელემენტების პოზიციონირების ტიპები</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">მთავარი</a></li>
+            <li><a href="#">სექცია 1</a></li>
+            <li><a href="#">სექცია 2</a></li>
+            <li><a href="#">კონტაქტი</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="content">
+            <h2> სათაური და ნავიგაციის მენიუ</h2>
+            <p>შექმენით header, რომელიც შეიცავს ვებსაიტის სათაურს და ნავიგაციის მენიუს.</p>
+            <p>ნავიგაციის მენიუს მიანიჭეთ <strong>position: fixed</strong>; და დააყენეთ გვერდის თავზე.</p>
+        </section>
+
+        <section class="content">
+            <h2> სტატიკური კონტენტის ბლოკი</h2>
+            <p>მთავარი კონტენტის სექცია, რომელიც უნდა იყოს <strong>position: static</strong>.</p>
+        </section>
+
+        <section class="content relative">
+            <h2> შედარებით მორგებული სექცია</h2>
+            <p> ბლოკი, რომელსაც ექნება <strong>position: relative</strong>, რათა შიგნით მოთავსებული ელემენტები მის მიმართ იყოს განლაგებული.</p>
+        </section>
+
+        <section class="content absolute-container">
+            <h2> აბსოლუტურად პოზიციონირებული ელემენტი</h2>
+            <div class="absolute-box">Position: Absolute</div>
+        </section>
+
+        <section class="content sticky-section">
+            <h2> სტიკი ელემენტი</h2>
+            <p>ელემენტი, რომელიც მოძრაობს გვერდზე სკროლისას <strong>position: sticky</strong>-ის გამოყენებით.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025. ყველა უფლება დაცულია.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<input type="number" id="numberInput" placeholder="Enter a number">
+<button onclick="checkEvenOdd()">Check</button>
+<p id="result"></p>
+
+<script>
+    function checkEvenOdd() {
+        let num = document.getElementById("numberInput").value;
+        let result = (num % 2 === 0) ? "Even" : "Odd";
+        document.getElementById("result").innerText = "The number is " + result;
+        console.log("The number is " + result);
+    }
+</script>
