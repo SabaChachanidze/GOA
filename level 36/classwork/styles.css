@@ -1,0 +1,49 @@
+.class1 {
+    color: red;
+    font-size: 20px;
+}
+
+.class2 {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.class3 {
+    border: 2px solid green;
+    margin: 15px;
+}
+
+.class4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.class5 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#id1 {
+    color: blue;
+    font-size: 18px;
+}
+
+#id2 {
+    background-color: yellow;
+    padding: 15px;
+}
+
+#id3 {
+    border: 3px dashed purple;
+    margin: 20px;
+}
+
+#id4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#id5 {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
