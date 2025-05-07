@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Element</title>
+</head>
+<body>
+    <ul id="removableList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        const list = document.getElementById('removableList');
+        const secondItem = list.children[1];
+        if (secondItem) {
+            list.removeChild(secondItem); 
+        }
+    </script>
+</body>
+</html>

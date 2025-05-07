@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resize Div</title>
+    <style>
+        .resizeDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            transition: width 0.3s, height 0.3s;
+        }
+        .increaseSize {
+            width: 400px;
+            height: 400px;
+        }
+        .decreaseSize {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Increase the size of the div</h3>
+    <button id="increaseButton">Increase Size</button>
+
+    <h3>Decrease the size of the div</h3>
+    <button id="decreaseButton">Decrease Size</button>
+
+    <div id="resizeDiv" class="resizeDiv"></div>
+
+    <script>
+        const increaseButton = document.getElementById('increaseButton');
+        const decreaseButton = document.getElementById('decreaseButton');
+        const resizeDiv = document.getElementById('resizeDiv');
+
+        increaseButton.addEventListener('click', function() {
+            resizeDiv.classList.add('increaseSize');
+            resizeDiv.classList.remove('decreaseSize');
+        });
+
+        decreaseButton.addEventListener('click', function() {
+            resizeDiv.classList.add('decreaseSize');
+            resizeDiv.classList.remove('increaseSize');
+        });
+    </script>
+
+</body>
+</html>

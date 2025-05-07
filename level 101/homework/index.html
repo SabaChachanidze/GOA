@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>classList Task</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        .active {
+            border: 2px solid green;
+        }
+        .important {
+            font-weight: bold;
+            color: red;
+        }
+        .red {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .blue {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        .class1 {
+            color: white;
+        }
+        .class2 {
+            font-size: 20px;
+        }
+        .class3 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myDiv">This is myDiv</div>
+
+    <button id="toggleButton">Toggle Active Class</button>
+    <div id="targetDiv">This is targetDiv</div>
+
+    <p id="checkParagraph" class="important">This is an important paragraph.</p>
+
+    <div id="replaceDiv" class="red"></div>
+
+    <div id="itemDiv" class="class1 class2 class3">Item Div</div>
+
+    <script>
+        const myDiv = document.getElementById('myDiv');
+        myDiv.classList.add('highlight');
+
+        myDiv.classList.remove('highlight');
+
+        const toggleButton = document.getElementById('toggleButton');
+        const targetDiv = document.getElementById('targetDiv');
+
+        toggleButton.addEventListener('click', function() {
+            targetDiv.classList.toggle('active');
+        });
+
+        const checkParagraph = document.getElementById('checkParagraph');
+        const hasImportantClass = checkParagraph.classList.contains('important');
+        console.log(hasImportantClass);
+
+        const replaceDiv = document.getElementById('replaceDiv');
+        replaceDiv.classList.replace('red', 'blue');
+
+        const itemDiv = document.getElementById('itemDiv');
+        console.log(itemDiv.classList.item(1));
+    </script>
+
+</body>
+</html>
+

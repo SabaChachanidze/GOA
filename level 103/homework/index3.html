@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მრიცხველის გაზრდა</title>
+    <style>
+        #counter {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>დაჭერით ღილაკზე მრიცხველის გაზრდისთვის</h2>
+
+    <button onclick="incrementCounter()">გადაიზარდოს მრიცხველი</button>
+    
+    <p>მრიცხველი: <span id="counter">0</span></p>
+
+    <script>
+        function incrementCounter() {
+            var counter = document.getElementById("counter");
+            var currentCount = parseInt(counter.innerText);
+            counter.innerText = currentCount + 1;
+        }
+    </script>
+
+</body>
+</html>

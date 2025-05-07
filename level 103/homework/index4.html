@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქვიზი</title>
+</head>
+<body>
+
+    <h2>როგორია დედამიწის ყველაზე დიდი კონტინენტი?</h2>
+
+    <form id="quizForm">
+        <label>
+            <input type="radio" name="answer" value="Africa"> აფრიკა
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="Asia"> აზია
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="Europe"> ევროპა
+        </label><br>
+
+        <button type="button" onclick="checkAnswer()">შემოწმება</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer() {
+            var result = document.getElementById("result");
+            var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+
+            if (selectedAnswer) {
+                if (selectedAnswer.value === "Asia") {
+                    result.textContent = "სწორი პასუხი!";
+                    result.style.color = "green";
+                } else {
+                    result.textContent = "მცდარი პასუხი. სცადეთ ისევ.";
+                    result.style.color = "red";
+                }
+            } else {
+                result.textContent = "გთხოვთ აირჩიოთ პასუხი.";
+                result.style.color = "orange";
+            }
+        }
+    </script>
+
+</body>
+</html>

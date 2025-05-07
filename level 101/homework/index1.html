@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        const ul = document.getElementById('myList');
+        const newLi = document.createElement('li');
+        newLi.textContent = 'New Item';
+        ul.appendChild(newLi);
+        
+        const firstLi = ul.querySelector('li');
+        if (firstLi) {
+            ul.removeChild(firstLi);
+        }
+
+        const secondLi = ul.querySelectorAll('li')[1];
+        if (secondLi) {
+            secondLi.textContent = 'Updated Item';
+        }
+    </script>
+</body>
+</html>

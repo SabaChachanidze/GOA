@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .custom-class {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="first-element">Original Content 1</div>
+    <div class="custom-class">Original Content 2</div>
+    <div>Original Content 3</div>
+
+    <script>
+        const firstElement = document.getElementById('first-element');
+        const secondElement = document.querySelector('.custom-class');
+        const thirdElement = document.querySelector('body > div:nth-of-type(3)');
+
+        firstElement.style.color = 'red';
+        firstElement.style.backgroundColor = 'yellow';
+        firstElement.style.fontSize = '20px';
+        firstElement.style.fontWeight = 'bold';
+        firstElement.textContent = 'Updated Content 1';
+
+        secondElement.style.color = 'blue';
+        secondElement.style.backgroundColor = 'lightgray';
+        secondElement.style.fontSize = '18px';
+        secondElement.style.fontStyle = 'italic';
+        secondElement.textContent = 'Updated Content 2';
+
+        thirdElement.style.color = 'green';
+        thirdElement.style.backgroundColor = 'pink';
+        thirdElement.style.fontSize = '16px';
+        thirdElement.style.textDecoration = 'underline';
+        thirdElement.textContent = 'Updated Content 3';
+    </script>
+</body>
+</html>

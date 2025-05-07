@@ -1,0 +1,15 @@
+#image-box {
+    width: 400px;
+    height: 250px;
+    background: white;
+    border: 1px solid #000;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+

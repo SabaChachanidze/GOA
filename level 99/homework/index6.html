@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Parent Elements</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        const spanElement = document.createElement('span');
+        spanElement.textContent = "This is a span.";
+
+        const containerDiv = document.getElementById('container');
+        containerDiv.appendChild(spanElement);
+
+        console.log(spanElement.parentElement);
+    </script>
+</body>
+</html>

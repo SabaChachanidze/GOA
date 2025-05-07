@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტექსტის დამალვა/გამოჩენა</title>
+    <style>
+        #myText {
+            display: block; 
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>დაჭერით ღილაკზე ტექსტის დამალვისა და გამოჩენისთვის</h2>
+
+    <p id="myText">ეს არის ტექსტი, რომელიც შეგიძლიათ დამალოთ ან გამოაჩინოთ ღილაკზე დაჭერისას.</p>
+
+    <button onclick="toggleText()">ტექსტის toggle</button>
+
+    <script>
+        function toggleText() {
+            var text = document.getElementById("myText");
+            if (text.style.display === "none") {
+                text.style.display = "block";  
+            } else {
+                text.style.display = "none";   
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Elements</title>
+</head>
+<body>
+    <script>
+        const newHeading = document.createElement('h3');
+        newHeading.textContent = 'Inserted Heading';
+
+        document.body.insertBefore(newHeading, document.body.firstChild);
+    </script>
+</body>
+</html>

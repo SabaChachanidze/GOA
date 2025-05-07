@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სურათის შეცვლა</title>
+    <style>
+        img {
+            width: 300px;
+            height: 200px;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>დაჭერით ღილაკზე სურათის შეცვლისთვის</h2>
+
+    <img id="myImage" src="image1.jpg" alt="პირველი სურათი">
+
+    <br><br>
+
+    <button onclick="changeImage()">ცვლილება</button>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById("myImage");
+            if (image.src.match("image1")) {
+                image.src = "image2.jpg";
+            } else {
+                image.src = "image1.jpg";
+            }
+        }
+    </script>
+
+</body>
+</html>
